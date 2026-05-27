@@ -55,5 +55,6 @@ public class Login {
 		String toastMessage = driver.findElement(By.id("message")).getText();
 		System.out.println("Toast Message: "+toastMessage);
 		driver.quit();
+		System.out.println("Login successful with captcha: "+captcha);
 	}
 }

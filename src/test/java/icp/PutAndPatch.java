@@ -66,5 +66,7 @@ public class PutAndPatch {
 		response.then().log().all();
 		
 		System.out.println("Push by Y");
+		System.out.println("Push by X");
+		System.out.println("Push by X and discussed with Y");
 		}
 }
