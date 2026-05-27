@@ -55,4 +55,14 @@ public class PutAndPatch {
 		response.then().statusCode(204);
 		response.then().log().all();
 		}
+	
+	@Test
+	public void delete3Request() {
+		baseURI = "https://reqres.in/api";	
+		Response response=given().
+			header("x-api-key","free_user_3EFvAUglrAwNUBCKUTnrSfTSFWQ").
+		    delete("/users/3");
+		response.then().statusCode(204);
+		response.then().log().all();
+		}
 }
