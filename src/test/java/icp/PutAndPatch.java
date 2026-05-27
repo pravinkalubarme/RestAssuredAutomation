@@ -64,5 +64,7 @@ public class PutAndPatch {
 		    delete("/users/3");
 		response.then().statusCode(204);
 		response.then().log().all();
+		
+		System.out.println("Push by Y");
 		}
 }
