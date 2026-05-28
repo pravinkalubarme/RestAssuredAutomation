@@ -21,6 +21,7 @@ public class GetAndPost {
 		response.then().statusCode(200);
 		String email = response.jsonPath().getString("data[0].email");
 		System.out.println("Email: "+email);
+		System.out.println("getRequest completed successfully.");
 
 	}
 	@Test
@@ -38,6 +39,7 @@ public class GetAndPost {
 		
 		System.out.println("Status Code: "+res.getStatusCode());
 		System.out.println("Response: "+res.jsonPath().getString("name"));
+		System.out.println("postRequest completed successfully.");
 	}
 
 }
